@@ -1,0 +1,19 @@
+# Copyright (C) 2024, Hadron Industries.
+# Carthage is free software; you can redistribute it and/or modify
+# it under the terms of the GNU Lesser General Public License version 3
+# as published by the Free Software Foundation. It is distributed
+# WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the file
+# LICENSE for details.
+
+name: test_project
+config:
+  plugins:
+    - https://github.com/hadron/carthage_aws
+    - carthage.podman
+    - /home/admin/carthage-swf
+  aws:
+    region: us-east-1
+    vpc_name: test_vpc
+  authorized_keys: /home/admin/.ssh/authorized_keys
+  
